@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     async function APIcall() {
-      let responce = await fetch("http://localhost:3001/api/products");
+      let responce = await fetch("https://productlist-ee4y.onrender.com/");
       let data = await responce.json();
       // console.log(data);
       setProducts(data);  
